@@ -1,0 +1,3 @@
+google-cloud-bigquery
+rtmbot
+oauth2client
