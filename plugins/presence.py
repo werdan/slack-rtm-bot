@@ -16,7 +16,7 @@ class PresenceListener(Plugin):
 
     def __init__(self, slack_client,plugin_config):
         super(self.__class__, self).__init__()
-        self.table = bigquery.Client().dataset('slack').table('presence')
+        self.table = bigquery.Client().dataset('slack').table('presence_partitioned')
         self.table.reload()
 
     def process_presence_change(self, data):
