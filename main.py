@@ -3,7 +3,7 @@ import os
 
 config = {
 	'DAEMON' : False,
-	'DEBUG' :  False,
+	'DEBUG' :  True,
 	'SLACK_TOKEN' : os.environ['SLACK_TOKEN'],
 	'ACTIVE_PLUGINS' : ['plugins.presence.PresenceListener']
 }
