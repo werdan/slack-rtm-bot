@@ -8,4 +8,8 @@ config = {
 	'ACTIVE_PLUGINS' : ['plugins.presence.PresenceListener']
 }
 bot = RtmBot(config)
-bot.start()
+
+while True:
+	bot.start()
+	# Occassionally we got https://api.slack.com/events/team_migration_started this event, that closes websocket
+	time.sleep(5)
